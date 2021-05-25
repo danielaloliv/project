@@ -1,0 +1,13 @@
+docs:
+
+- title: E-mail
+  url: mailto:daniela.liborio.oliveira@gmail.com
+  image_path: /assets/svg/icons-social-media/email.svg
+
+- title: LinkedIn
+  url: https://www.linkedin.com/in/daniela-oliveira-076202128/
+  image_path: /assets/svg/icons-social-media/linkedin.svg
+
+- title: Behance
+  url: https://www.behance.net/danielaloliv
+  image_path: /assets/svg/icons-social-media/behance.svg

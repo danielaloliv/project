@@ -1,0 +1,16 @@
+<header>
+    <a href="{{ "/" | relative_url }}" class="logo">daniela o.</a>
+
+    <!-- This button will only be displayed on screens with 
+    less than 850px width (to be defined on SCSS)-->
+    <button onclick="openMenu()">
+        <img id="menuicon" src="{{ "/assets/svg/icons-menu/hamburger.svg" | relative_url }}" alt="Hamburguer menu icon">
+    </button>
+    <nav id="nav-links">
+        {% for item in site.data.nav-header-links.docs %}
+            <a href="{{ item.url }}" onclick="hideMenu()">
+                {{ item.title }}
+            </a>
+        {% endfor %}  
+    </nav>	
+</header>
