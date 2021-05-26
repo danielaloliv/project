@@ -1,10 +1,10 @@
 <footer>
   <nav style="background-color:blue;"> <!--Inline style only applied temporarily so we're able to see the white icons-->
     {% for item in site.data.nav-footer-links.docs %}
-      <a href="{{ item.url }}">
+      <a href="{{ item.url }}" title="{{ item.title }}" target="_blank">
         <img src="{{ item.image_path }}" alt="{{ item.title }}"/>
       </a>
     {% endfor %}
-</nav>
+  </nav>
   <p>© Daniela Oliveira 2021</p>
 </footer>
