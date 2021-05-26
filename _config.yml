@@ -2,8 +2,8 @@ title: daniela o.
 email: daniela.liborio.oliveira@gmail.com
 description: >- 
   Portfolio of Daniela Oliveira, Lisbon based UX/UI Designer. This webpage contains projects made by Daniela in the following fields: User Research, Interface Design, User Experience, User Flows, Product Design and Digital Design.
-baseurl: ""
-url: "https://danielaloliv.github.io/project/"
+baseurl: "/project"
+url: ""
 
 collections:
   portfolio:
