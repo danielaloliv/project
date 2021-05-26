@@ -2,12 +2,9 @@ docs:
 
 - title: Portfolio
   url: portfolio.html
-  permalink: /project/portfolio
 
 - title: About
   url: about.html
-  permalink: /project/about.html
 
 - title: Contacts
   url: contacts.html
-  permalink: /project/contacts.html
