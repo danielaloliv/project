@@ -1,10 +1,10 @@
 docs:
 
 - title: Portfolio
-  url: projects/portfolio
+  url: /portfolio
 
 - title: About
-  url: projects/about
+  url: /about
 
 - title: Contacts
-  url: projects/contacts
+  url: /contacts
