@@ -8,7 +8,7 @@
     </button>
     <nav id="nav-links">
         {% for item in site.data.nav-header-links.docs %}
-            <a href="{{ sitebase.url }}/{{ item.url }}" onclick="hideMenu()">
+            <a href="{{ site.baseurl }}/{{ item.url }}" onclick="hideMenu()">
                 {{ item.title }}
             </a>
         {% endfor %}  
