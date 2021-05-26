@@ -8,4 +8,3 @@ url: "https://danielaloliv.github.io/project/"
 collections:
   portfolio:
     output: true
-    permalink: :path
