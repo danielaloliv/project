@@ -12,23 +12,23 @@ a {
 /* Common Properties */
 
 body, a.logo, #welcome a small, #contacts a {
-	color: rgb(223, 131, 131);
+	color: $color-primary;
 }
 
-#nav-links, .hover-overlay, .work-button, footer {
-	background-color: rgb(223, 131, 131)
+ .hover-overlay, .work-button, footer {
+	background-color: $color-primary;
 }
 
-body, header, #welcome {
-	background-color: white;
+body, #welcome {
+	background-color: $color-neutral-light;
 }
 
-header, #about {
-	border-bottom: 0.5px solid rgb(223, 131, 131);
+#about {
+	border-bottom: 0.5px solid $color-primary;
 }
 
-#nav-links a, #work figure, .work-button, footer p {
-	color: white;
+#work figure, .work-button, footer p {
+	color: $color-neutral-light;
 }
 
 
@@ -39,6 +39,7 @@ body {
 	margin: 0;
 	margin: 0;
 	font-family: $base-font-family;
+	font-size: $base-font-size;
 		
 	/* grid container settings */
 	display: grid;
@@ -58,6 +59,6 @@ body {
 body > main {
 	grid-area: main;
 	margin: 0;
-	max-width: 1280px;
 	padding-top: 70px;
+	width: 100vw;
 }

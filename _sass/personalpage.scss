@@ -4,8 +4,14 @@
 // Variables
 
 $base-font-family: 'Karla', sans-serif;
+$base-font-medium: 300;
+$base-font-bold: 400;
+$base-font-size: 16px;
+
 $color-primary: rgb(223, 131, 131);
-$color-neutral: white;
+$color-neutral-light: white;
+
+$content-width: 100vw;
 
 //
 /*
@@ -44,5 +50,8 @@ $on-laptop:        850px !default;
   "personalpage/base",
   "personalpage/header",
   "personalpage/nav-portfolio",
-  "personalpage/footer"
+  "personalpage/footer",
+  "personalpage/contacts",
+  "personalpage/about",
+  "personalpage/project"
 ;
