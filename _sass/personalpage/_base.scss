@@ -1,0 +1,42 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: 'Karla', sans-serif;
+}
+
+.main {
+	margin: auto;
+	max-width: 1280px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* Common Properties */
+
+body, a.logo, #welcome a small, #contacts a {
+	color: rgb(223, 131, 131);
+}
+
+#nav-links, .hover-overlay, .work-button, footer {
+	background-color: rgb(223, 131, 131)
+}
+
+body, header, #welcome {
+	background-color: white;
+}
+
+header, #about {
+	border-bottom: 0.5px solid rgb(223, 131, 131);
+}
+
+#nav-links a, #work figure, .work-button, footer p {
+	color: white;
+}
+

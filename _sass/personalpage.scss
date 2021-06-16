@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600&display=swap');
+
+// Variables
+
+$base-font-family: 'Karla', sans-serif;
+$color-primary: rgb(223, 131, 131);
+$color-neutral: white;
+
+//
+/*
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+*/
+//
+
+
+// Calculate Media Queries
+$content-width:    800px !default;
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+// Partials
+
+@import
+  "personalpage/base",
+  "personalpage/header",
+  "personalpage/header",
+  "personalpage/nav-portfolio"
+;
