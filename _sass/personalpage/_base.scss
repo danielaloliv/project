@@ -2,15 +2,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	margin: 0;
-	font-family: 'Karla', sans-serif;
-}
-
-.main {
-	margin: auto;
-	max-width: 1280px;
-}
 
 a {
 	text-decoration: none;
@@ -40,3 +31,33 @@ header, #about {
 	color: white;
 }
 
+
+
+body {
+	height: 100vh; 
+	min-height: 100vh; 
+	margin: 0;
+	margin: 0;
+	font-family: $base-font-family;
+		
+	/* grid container settings */
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: 
+		/*
+		'header'*/
+		'main'
+		'footer';
+}
+  /*
+  body > header {
+	grid-area: header;
+  }
+  */
+body > main {
+	grid-area: main;
+	margin: 0;
+	max-width: 1280px;
+	padding-top: 70px;
+}
