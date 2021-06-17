@@ -2,12 +2,11 @@
 layout: default
 ---
 
-<h1>{{ page.title | escape }}</h1>
-
-<a href="{{ site.baseurl }}/portfolio.html">← Back to portfolio</a>
-
-<article>
+<div class="project-topbar">
+    <a href="{{ site.baseurl }}/portfolio.html">← Back</a>
     <h1>{{page.title}}</h1>
+</div>
+<article class="projectdetail">
     {{ content }}
-    <a href="{{page.behanceurl}}" Title="{{page.title}} project on Behance" target="_blank">See more on Behance</a>
+    <a href="{{page.behanceurl}}" Title="{{page.title}} project on Behance" target="_blank">See more on Behance →</a>
 </article>

@@ -1,11 +1,12 @@
 footer {
     grid-area: footer;
 	align-self: end;
-	width: $page-width;
+	width: 100vw;
 	height: 140px;
 	display: block;
 	text-align: center;
 	padding-top: 60px;
+	background-color: $color-primary;
 	@include media-query($on-laptop) { 
         position: relative;
 	    height: 100px;
@@ -17,6 +18,7 @@ footer {
 		letter-spacing: -0.6px;
 		margin: 0;
 		padding: 0;
+		color: $color-neutral-light;
 		@include media-query($on-laptop) { 
             position: absolute;
 		    top: 50%;
@@ -34,6 +36,7 @@ footer {
 	a {
 		padding-left: 30px;
 		padding-right: 30px;
+		text-decoration: none;
 		@include media-query($on-laptop) { 
             padding-left: 20px;
 		    padding-right: 20px;

@@ -2,39 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-
-a {
-	text-decoration: none;
-}
-
-
-
-/* Common Properties */
-
-a.logo, #welcome a small, #contacts a {
-	color: $color-primary;
-}
-
- .hover-overlay, .work-button, footer {
-	background-color: $color-primary;
-}
-
-#welcome {
-	background-color: $color-neutral-light;
-}
-
-#about {
-	border-bottom: 0.5px solid $color-primary;
-}
-
-#work figure, .work-button, footer p {
-	color: $color-neutral-light;
-}
-
-
-
 body {
-	height: 100vh; 
 	min-height: 100vh; 
 	margin: 0;
 	margin: 0;
@@ -48,40 +16,49 @@ body {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto 1fr auto;
 	grid-template-areas: 
-		/*
-		'header'*/
 		'main'
 		'footer';
-}
-  /*
-  body > header {
-	grid-area: header;
-  }
-  */
-body > main {
-	grid-area: main;
-	margin: 0;
-	margin: auto;
-	max-width: 1280px;
-	padding: 70px 20px 50px 20px;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-h1 {
-	margin: 0;
-	padding: 0;
-	padding-bottom: 36px;
-	padding-top: 50px;
-	font-size: 2.5rem;
-	letter-spacing: -0.6px;
-    @include media-query($on-laptop) { 
-        text-align: center;
-        flex: 100%;
-        padding-bottom: 80px;
-    }
+	main {
+		box-sizing: border-box;
+		grid-area: main;
+		width: 100%;
+		padding: $padding-mobile;
+		@include media-query($on-laptop) { 
+			padding: 70px 0px 0px 0px;
+		}
+	}
+	a {
+		color: $color-primary;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	h1 {
+		margin: 0;
+		padding: 0;
+		padding-bottom: 36px;
+		padding-top: 50px;
+		font-size: 2.5rem;
+		letter-spacing: -0.6px;
+		@include media-query($on-laptop) { 
+			margin: auto;
+			padding-left: 0px;
+			text-align: center;
+			flex: $page-width;
+		}
+	}
+	.text-content {
+		width: $page-width;
+		padding-top: 5vh;
+		@include media-query($on-laptop) { 
+			padding-top: 15vh;
+			text-align: center;
+			width: $text-content-width;
+		}
+		a {
+			text-decoration: underline;
+		}
+	}
 }

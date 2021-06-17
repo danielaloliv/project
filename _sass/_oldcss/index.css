@@ -22,7 +22,7 @@ a {
 
 /* Common Properties */
 
-body, a.logo, #welcome a small, #contacts a {
+body, a.logo, #welcome a small{
 	color: rgb(223, 131, 131);
 }
 
