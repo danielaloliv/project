@@ -3,42 +3,25 @@
 	scroll-margin-top: 70px;
 	box-sizing: border-box;
 	width: 100%;
-	padding-top: 5vh;
 	@include media-query($on-laptop) { 
 		padding-top: 15vh;
 		text-align: center;
 		margin: auto;
 	}
-}
-
-
-.homepage p {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 23px;
-	letter-spacing: -1px;
-	margin-bottom: 40px;
-	margin-top: 0px;
-}
-
-.homepage strong {
-	font-weight: 600;
-}
-
-.homepage a {
-	@include media-query($on-laptop) { 
-		text-align: center;
+	p {
+		font-weight: $base-font-bold;
+		font-size: 1.3rem;
+		line-height: 23px;
+		letter-spacing: -1px;
+		margin-bottom: 40px;
+		margin-top: 0px;
 	}
-}
-
-.homepage img {
-	margin: auto;
-	box-sizing: border-box;
-	padding: 0 20px 10px 20px ;
-}
-
-.homepage small {
-	display: block;
-	font-weight: 300;
-	font-size: 14px;
+	strong {
+		font-weight: $base-font-extrabold;
+	}
+	a {
+		@include media-query($on-laptop) { 
+			text-align: center;
+		}
+	}
 }

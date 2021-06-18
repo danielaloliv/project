@@ -51,7 +51,6 @@ body {
 	}
 	.text-content {
 		width: $page-width;
-		padding-top: 5vh;
 		@include media-query($on-laptop) { 
 			padding-top: 15vh;
 			text-align: center;
