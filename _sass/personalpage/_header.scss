@@ -47,9 +47,6 @@ header {
 				font-size: 1.2rem;
 				font-weight: $base-font-medium;
 				color: $color-primary;
-				&:hover {
-					text-decoration: underline;
-					}
 			}
 		}
 	}
@@ -62,5 +59,8 @@ header {
 		left: 20px;
 		top: 50%;
 		transform: translateY(-50%);
+		&:hover {
+			text-decoration: none;
+			}
 	}
 }
