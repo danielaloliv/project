@@ -29,7 +29,7 @@ function hideMenu() {
 
 
 
-/*  */
+/*  
 window.setTimeout(async function(){
 
 
@@ -76,3 +76,5 @@ window.setTimeout(async function(){
 
 
 }, 2000)
+
+*/
