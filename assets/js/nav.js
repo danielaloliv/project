@@ -30,33 +30,49 @@ function hideMenu() {
 
 
 /*  */
-window.setTimeout( function(){
+window.setTimeout(async function(){
 
-	const shareButton = document.querySelector('.botaoespecial');
-    const overlay = document.querySelector('.overlay');
-    const shareModal = document.querySelector('.share');
 
-    const title = window.document.title;
-    const url = window.document.location.href;
 
-    shareButton.addEventListener('click', () => {
-        if (navigator.share) {
-            navigator.share({
-                title: `${title}`,
-                url: `https://www.belasartes.ulisboa.pt/wp-content/uploads/2013/02/FBA_2021_CALENDARIOLETIVO.pdf`
-            }).then(() => {
-                console.log('Thanks for sharing!');
-            })
-            .catch(console.error);
-        } else {
-            overlay.classList.add('show-share');
-            shareModal.classList.add('show-share');
-        }
-    })
+	var blob = null;
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", baseUrl+"/assets/pdf/pdfdemonio.pdf");
+	xhr.responseType = "blob";//force the HTTP response, response-type header to be blob
+	xhr.onload = function()
+	{
+		blob = xhr.response;//xhr.response is now a blob object
+		const file = new File([blob], 'omeudocumento.pdf', { type: 'application/pdf' });
 
-    overlay.addEventListener('click', () => {
-        overlay.classList.remove('show-share');
-        shareModal.classList.remove('show-share');
-    })
+
+		const shareButton = document.querySelector('.botaoespecial');
+		const overlay = document.querySelector('.overlay');
+		const shareModal = document.querySelector('.share');
+	
+		const title = window.document.title;
+		const url = window.document.location.href;
+	
+		shareButton.addEventListener('click', () => {
+			if (navigator.share) {
+				navigator.share({
+					title: `${title}`,
+					files: [file]
+				}).then(() => {
+					console.log('Thanks for sharing!');
+				})
+				.catch(console.error);
+			} else {
+				overlay.classList.add('show-share');
+				shareModal.classList.add('show-share');
+			}
+		})
+	
+		overlay.addEventListener('click', () => {
+			overlay.classList.remove('show-share');
+			shareModal.classList.remove('show-share');
+		})
+	}
+	xhr.send();
+
+
 
 }, 2000)
