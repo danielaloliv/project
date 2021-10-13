@@ -43,7 +43,7 @@ window.setTimeout( function(){
         if (navigator.share) {
             navigator.share({
                 title: `${title}`,
-                url: `${url}`
+                url: `https://www.belasartes.ulisboa.pt/wp-content/uploads/2013/02/FBA_2021_CALENDARIOLETIVO.pdf`
             }).then(() => {
                 console.log('Thanks for sharing!');
             })
