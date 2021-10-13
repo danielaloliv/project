@@ -41,7 +41,7 @@ window.setTimeout(async function(){
 	xhr.onload = function()
 	{
 		blob = xhr.response;//xhr.response is now a blob object
-		const file = new File([blob], 'omeudocumento.pdf', { type: 'application/pdf' });
+		const file = new File([blob], 'omeudocumento.pdf', { type: 'data:application/pdf' });
 
 
 		const shareButton = document.querySelector('.botaoespecial');
